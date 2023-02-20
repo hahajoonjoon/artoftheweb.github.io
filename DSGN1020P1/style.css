@@ -230,6 +230,11 @@ td {
   .cats {
     height: 600px;
     width: auto;
+    animation:catsanimation 6s;
+  }
+  @keyframes catsanimation {
+    from {opacity:0;}
+    to {opacity:1;}
   }
 
   #escapecat {
