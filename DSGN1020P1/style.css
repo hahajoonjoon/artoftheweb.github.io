@@ -34,12 +34,11 @@ textarea {
 a {
     color: black;
 }
-a.text:hover {
-    text-shadow: 5px 5px #7d7d7d;
 
-}
-a.button:hover  {
-    box-shadow: 3px 3px #7d7d7d;
+a:hover {
+    text-shadow: 5px 5px #7d7d7d;
+    color:black;
+
 }
 
 
