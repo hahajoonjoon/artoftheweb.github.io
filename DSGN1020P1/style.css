@@ -1,0 +1,336 @@
+
+@import url('https://fonts.googleapis.com/css?family=Sofia');
+
+html {
+    background-color: white;
+    color: black;
+    text-align: center;
+    scroll-behavior: smooth;
+    font-family: 'Sofia', serif;
+
+}
+
+#landing {
+    font-size: 100px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top: 200px;
+    margin-bottom: 150px;
+}
+#openmap {
+    
+    border: solid 3px black;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    width: 50%;
+    height: 30%;
+    margin: auto;
+}
+textarea {
+    width:80%;
+    height:50vh;
+    border:solid 3px black;
+}
+
+a {
+    color: black;
+}
+a.text:hover {
+    text-shadow: 5px 5px #7d7d7d;
+
+}
+a.button:hover  {
+    box-shadow: 3px 3px #7d7d7d;
+}
+
+
+.header {
+    padding: auto;
+    width: 100%;
+    position: fixed;
+    text-align: center;
+    font-size: 50px;
+    
+}
+section {
+    padding-top: 300px;
+}
+
+.container {
+    display: flex;
+    gap: 10vw;
+    width: auto;
+}
+
+.standard {
+    width: 300px;
+    height: 300px;
+    min-width: 100px;
+    object-fit: cover;
+}
+
+
+
+.art {
+    flex-grow: 0;
+    width: 300px;
+    height: auto;
+}
+
+.cover {
+    position: absolute;
+    border: solid black 1px;
+    width: 300px;
+    height: 300px;
+    background-image: url(Photos/Curtain_closed.png);
+    background-size: 100%;
+    z-index: 100;
+}
+
+.cover:hover {
+    border: solid black 1px;
+    background-image: url(Photos/Curtain_open.png);
+    background-size: 100%;
+    cursor: zoom-in;
+    
+}
+
+
+
+#goleft {
+    position:fixed;
+    left: 50px;
+    bottom: 50px;
+    width: 100px;
+    height: auto;
+
+    
+}
+#front{
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+a:hover {
+    color: red;
+    cursor: pointer;
+    
+}
+a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+.bottom {
+    display: flex;
+    justify-content: space;
+}
+#goright{
+    position:fixed;
+    right: 50px;
+    bottom: 50px;
+    width: 100px;
+    height: auto;
+}
+#gohome{
+    position: fixed;
+    bottom: 50px;
+    width: 100%;
+    align-content: center;
+    font-size: 30px;
+    color: black;
+
+}
+#leftarrow{
+    width:100px;
+    height: auto;
+}
+
+#rightarrow{
+    width:100px;
+    height: auto;
+    transform: rotate(180deg);
+}
+
+#front {
+    width:500vw;
+    height:100%;
+}
+
+
+
+/* For info */
+#info {
+    width: 60%;
+    height: 60%;
+    font-size: 100px;
+    margin: auto;
+    justify-content: space-between;
+}
+table {
+    table-layout: fixed;
+    
+}
+td {
+    width: 500px;
+    height: 500px;
+    padding-top: 50px;
+    background-image: url(Photos/paper.png);
+    background-size: 100%;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+  }
+  .overlay:target {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .popup {
+    margin: 70px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    width: 30%;
+    position: relative;
+    transition: all 5s ease-in-out;
+    font-family: Tahoma, Arial, sans-serif;
+  }
+  
+  .popup h2 {
+    margin-top: 0;
+    color: #333;
+    
+  }
+  .popup .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+  }
+  .popup .content {
+    max-height: 30%;
+    overflow: auto;
+  }
+  
+  .cats {
+    height: 600px;
+    width: auto;
+  }
+
+  #escapecat {
+    height: 100px;
+    font-size: 100px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  }
+
+  /* Restroom */
+  .typewriter {
+    padding-top: 200px;
+  }
+  .typewriter h1{
+    font-size: 20px;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid white; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: white; }
+  }
+
+  #map {
+    width: 95vw;
+    height: 95vh;
+    border: solid 3px black;
+    margin: auto;
+    font-size: 50px;
+    font-family: 'Courier New', Courier, monospace;
+  }
+
+  .mapcontent {
+    border: solid 3px #7d7d7d;
+    text-align: center;
+    
+    
+
+  }
+  
+
+  
+
+  .mapcontent:hover{
+    background: #EEE;
+  }
+
+  #map_exhibition{
+    width:60%;
+    height:50%;
+    position: relative;
+    top: 10px;
+    left: 10px;
+  }
+
+  #map_exit {
+    width: 200px;
+    height: 100px;
+    position: absolute;
+    bottom: 3%;
+    left: 3%;
+    border-top: transparent;
+    border-bottom: transparent;
+  } 
+  
+
+  #map_restroom{
+    position: absolute;
+    top: 5%;
+    left: 70%;
+    width: 20%;
+    height:15%;
+  }
+
+  #map_info{
+    position: absolute;
+    bottom: 10%;
+    left: 40%;
+    width:20%;
+    height:15%;
+  }
+
+  #map_cat{
+    position: absolute;
+    right: 5%;
+    bottom: 10%;
+
+    width: 30%;
+    height: 50%;
+  }
+
